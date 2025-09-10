@@ -91,13 +91,13 @@ color:
   navbar_bg_color: "#ffffff"
   navbar_bg_color_dark: "#2c2c2c"
 
-  navbar_text_color: "#2d3748"
+  navbar_text_color: "#ffffff"
   navbar_text_color_dark: "#e2e8f0"
 
-  subtitle_color: "#2d3748"
+  subtitle_color: "#ffffff"
   subtitle_color_dark: "#f8f8f8"
 
-  text_color: "#2d3748"
+  text_color: "#ffffff"
   text_color_dark: "#e0e0e0"
 
   sec_text_color: "#4a5568"
