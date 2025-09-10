@@ -3,113 +3,87 @@
 # Author: Fluid-dev
 # Github: https://github.com/fluid-dev/hexo-theme-fluid
 #
-# 配置指南: https://hexo.fluid-dev.com/docs/guide/
+# A guide to customizing this theme: https://hexo.fluid-dev.com/docs/en/guide/
 #
-# 这份配置已为您量身定制，旨在提供更现代、更个性化的博客体验。
-# 您可以根据需要随时调整这些设置。
+# This configuration has been customized to provide a clean and modern blogging experience.
+# Feel free to adjust these settings to fit your personal style.
 #---------------------------
 
 
 #---------------------------
-# 全局
 # Global
 #---------------------------
 
-# 用于浏览器标签的图标
-# Icon for browser tab
+# Icon for browser tab and Apple devices
 favicon: /img/fluid.png
-
-# 用于苹果设备的图标
-# Icon for Apple touch
 apple_touch_icon: /img/fluid.png
 
-# 浏览器标签页中的标题分隔符，效果： 文章名 | 站点名
-# Title separator in browser tab, eg: article | site
+# Title separator for browser tabs
 tab_title_separator: " | "
 
-# 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
-# Force all links to be HTTPS (applicable to HTTP mixed error)
+# Force all links to be HTTPS (useful for mixed content errors)
 force_https: false
 
-# 代码块的增强配置
 # Enhancements to code blocks
 code:
-  # 是否开启复制代码的按钮
   # Enable copy code button
   copy_btn: true
 
-  # 代码语言
-  # Code language
+  # Code language display
   language:
     enable: true
     default: "TEXT"
 
-  # 代码高亮
-  # Code highlight
+  # Code highlighting
   highlight:
     enable: true
-
-    # 代码块是否显示行号
-    # If true, the code block display line numbers
+    # Display line numbers in code blocks
     line_number: true
-
-    # 实现高亮的库，对应下面的设置
-    # Highlight library
-    # Options: highlightjs | prismjs
+    # Highlight library: highlightjs or prismjs
     lib: "highlightjs"
-
     highlightjs:
-      # 挑选了更现代和清晰的代码高亮风格
+      # A clean, modern style for light and dark modes
       style: "atom-one-light"
       style_dark: "atom-one-dark"
 
-    prismjs:
-      style: "default"
-      style_dark: "tomorrow night"
-      preprocess: true
-
-# 一些好玩的功能
-# Some fun features
+# Fun features to enhance user experience
 fun_features:
-  # 为 subtitle 添加打字机效果，只在首页开启
-  # Typing animation for subtitle, only on home page
+  # Typing animation for the subtitle on the homepage
   typing:
     enable: true
     typeSpeed: 70
     cursorChar: "_"
-    # 动画只播放一次
+    # The animation will play only once
     loop: false
-    # 只在首页开启
+    # This effect will only be enabled on the homepage
     scope: [home]
 
-  # 为文章内容中的标题添加锚图标，方便分享和跳转
-  # Add an anchor icon to the title on the post page for easy navigation
+  # Add an anchor icon to post headings for easy linking
   anchorjs:
     enable: true
+    # Apply to all heading levels
     element: h1,h2,h3,h4,h5,h6
-    # 图标显示在标题右侧
+    # Place the icon to the right of the heading
     placement: right
-    # 悬停时才显示，使页面更整洁
+    # Only show the icon on hover for a cleaner look
     visible: hover
+    # The default icon is usually fine, so we'll leave it empty
     icon: ""
 
-  # 加载进度条
-  # Progress bar when loading
+  # Loading progress bar at the top of the page
   progressbar:
     enable: true
     height_px: 3
     color: "#29d"
     options: { showSpinner: false, trickleSpeed: 100 }
 
-# 主题暗色模式，开启后菜单中会出现切换按钮
-# Theme dark mode. If enable, a switch button will appear on the menu
+# Theme dark mode switch
 dark_mode:
   enable: true
-  # 优先遵循用户系统设置，其次根据时间自动切换
+  # Automatically switch between light and dark based on the user's system preferences
   default: auto
 
-# 主题颜色配置，挑选了更柔和、现代的配色方案
-# Theme color, selected a softer, more modern color scheme
+# Theme color configuration for a cohesive design
 color:
   body_bg_color: "#f0f2f5"
   body_bg_color_dark: "#1e1e1e"
@@ -160,23 +134,21 @@ color:
   button_hover_bg_color: "#edf2f7"
   button_hover_bg_color_dark: "#3a3a3a"
 
-# 主题字体配置
-# Font
+# Font configuration
 font:
   font_size: 16px
   font_family:
   letter_spacing: 0.02em
   code_font_size: 85%
 
-# 指定自定义 .js 文件路径，用法和 custom_css 相同
+# Custom JS and CSS files
 custom_js:
-
-# 指定自定义 .css 文件路径，用法和 custom_js 相同
 custom_css:
 
-# 网页访问统计
+# Web analytics
 web_analytics:
   enable: false
+  # Follow "Do Not Track" setting
   follow_dnt: true
   baidu:
   google:
@@ -193,43 +165,41 @@ web_analytics:
     path: window.location.pathname
     ignore_local: false
 
-# 对页面中的图片和评论插件进行懒加载处理
-# Lazy loading of images and comment plugin on the page
+# Lazy loading for images and comments
 lazyload:
   enable: true
   loading_img: /img/loading.gif
-  # 懒加载仅在文章页生效以提高性能
+  # Only enable lazyload on post pages for better performance
   onlypost: true
   offset_factor: 2
 
-# 图标库
+# Icon library
 iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 
 
 #---------------------------
-# 页头
 # Header
 #---------------------------
 
-# 导航栏的相关配置
 # Navigation bar
 navbar:
-  # 导航栏左侧的标题，设为您自己的博客名
+  # Blog title for the navigation bar
   blog_title: "TanZp"
-  # 开启毛玻璃特效
+  # Frosted glass effect for the navigation bar
   ground_glass:
     enable: true
     px: 5
     alpha: 0.8
-  # 导航栏菜单
+  # Navigation bar menu items
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
-# 搜索功能
+# Search feature
 search:
   enable: true
   path: /local-search.xml
@@ -237,18 +207,19 @@ search:
   field: post
   content: true
 
-# 首屏图片的相关配置
+# Banner image settings
 banner:
+  # Scrolling parallax effect for the banner
   parallax: true
   width_height_ratio: 1.0
 
-# 向下滚动的箭头
+# Scroll down arrow
 scroll_down_arrow:
   enable: true
   banner_height_limit: 80
   scroll_after_turning_page: true
 
-# 向顶部滚动的箭头
+# Scroll to top arrow
 scroll_top_arrow:
   enable: true
 
@@ -264,21 +235,21 @@ open_graph:
 
 
 #---------------------------
-# 页脚
 # Footer
 #---------------------------
 footer:
-  # 页脚第一行文字的 HTML，为您定制了更简洁的文字
+  # Customized footer content
   content: '
     <a href="https://tanzipeng.github.io" target="_blank" rel="nofollow noopener"><span>TanZp</span></a>
     <i class="iconfont icon-love"></i>
     <a href="https://tanzipeng.github.io" target="_blank" rel="nofollow noopener"><span>ShuaiGe</span></a>
   '
-  # 展示网站的 PV、UV 统计数，使用 busuanzi 简单易用
+  # Website statistics
   statistics:
     enable: true
+    # Use busuanzi for simplicity and no extra configuration
     source: "busuanzi"
-  # 国内大陆服务器的备案信息
+  # Chinese mainland website policy info
   beian:
     enable: false
     icp_text:
@@ -288,18 +259,15 @@ footer:
 
 
 #---------------------------
-# 首页
 # Home Page
 #---------------------------
 index:
-  # 首页 Banner 头图，您需要准备一张名为 `home-banner.png` 的图片并放在 `source/img/` 目录下
   banner_img: /img/default.png
   banner_img_height: 100
   banner_mask_alpha: 0.4
-  # 首页副标题的独立设置
   slogan:
     enable: true
-    # 个性化副标题，您可以根据喜好修改
+    # A more personal subtitle
     text: "Exploring the world, one line of code at a time."
     api:
       enable: false
@@ -307,34 +275,27 @@ index:
       method: "GET"
       headers: {}
       keys: []
-  # 自动截取文章摘要
   auto_excerpt:
     enable: true
-  # 打开文章的标签方式，在当前窗口打开
   post_url_target: _self
-  # 显示文章信息（时间、分类、标签）
+  # Display post metadata on the homepage
   post_meta:
     date: true
     category: true
     tag: true
-  # 置顶文章的图标
   post_sticky:
     enable: true
     icon: "iconfont icon-top"
 
 
 #---------------------------
-# 文章页
 # Post Page
 #---------------------------
 post:
-  # 文章页头图，您需要准备一张名为 `post-banner.png` 的图片并放在 `source/img/` 目录下
   banner_img: /img/default.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
-  # 文章在首页的默认封面图
-  default_index_img: /img/default.png
-  # 文章标题下方的元信息
+  default_index_img:
   meta:
     author:
       enable: false
@@ -347,30 +308,25 @@ post:
       enable: true
       awl: 2
       wpm: 60
-    # 开启浏览量计数，使用 busuanzi
     views:
       enable: true
       source: "busuanzi"
-  # 在文章开头显示更新时间，以相对时间形式展示
   updated:
     enable: true
     date_format: "LL"
     relative: true
     note_class: info
-  # 侧边栏展示当前分类下的文章
   category_bar:
     enable: true
     specific: false
     placement: left
     post_order_by: "title"
     post_limit: 0
-  # 侧边栏展示文章目录
   toc:
     enable: true
     placement: right
     headingSelector: "h1,h2,h3,h4,h5,h6"
     collapseDepth: 0
-  # 版权声明，使用 'BY-NC-SA' 许可证
   copyright:
     enable: true
     license: 'BY-NC-SA'
@@ -382,38 +338,26 @@ post:
     update_date:
       enable: false
       format: "YYYY-MM-DD"
-  # 文章底部上一篇下一篇功能
   prev_next:
     enable: true
-  # 文章图片标题
   image_caption:
     enable: true
-  # 文章图片可点击放大
   image_zoom:
     enable: true
     img_url_replace: ['', '']
-  # 脚注语法
   footnote:
     enable: true
     header: ''
-  # 数学公式和流程图默认关闭，如果需要使用，可以手动开启
   math:
     enable: false
-    specific: false
-    engine: mathjax
-  mermaid:
-    enable: false
-    specific: false
-    options: { theme: 'default' }
-  # 评论插件默认关闭，如果您需要开启，请在 `comments` 下方配置您选择的插件
-  comments:
-    enable: false
-    type: disqus
 
 
 #---------------------------
-# 评论插件
+# Comment plugins
+#
+# Enable comments: post: comments: enable: true
 #---------------------------
+
 utterances:
   repo:
   issue_term: pathname
@@ -511,7 +455,6 @@ discuss:
 
 
 #---------------------------
-# 归档页
 # Archive Page
 #---------------------------
 archive:
@@ -521,7 +464,6 @@ archive:
 
 
 #---------------------------
-# 分类页
 # Category Page
 #---------------------------
 category:
@@ -536,7 +478,6 @@ category:
 
 
 #---------------------------
-# 标签页
 # Tag Page
 #---------------------------
 tag:
@@ -553,7 +494,6 @@ tag:
 
 
 #---------------------------
-# 关于页
 # About Page
 #---------------------------
 about:
@@ -561,11 +501,9 @@ about:
   banner_img: /img/default.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  # 您的头像和介绍
   avatar: /img/avatar.png
   name: "TanZp"
   intro: "An elegant theme for Hexo"
-  # 社交媒体图标，已为您保留 GitHub 和微信，并添加了 Twitter 选项
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
     - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
@@ -573,7 +511,6 @@ about:
 
 
 #---------------------------
-# 自定义页
 # Custom Page
 #---------------------------
 page:
@@ -583,7 +520,6 @@ page:
 
 
 #---------------------------
-# 404页
 # 404 Page
 #---------------------------
 page404:
@@ -595,7 +531,6 @@ page404:
 
 
 #---------------------------
-# 友链页
 # Links Page
 #---------------------------
 links:
@@ -632,10 +567,8 @@ links:
 
 
 #---------------------------
-# 以下是配置 JS CSS 等静态资源的 URL 前缀，可以自定义成 CDN 地址
-# DO NOT EDIT THE FOLLOWING SETTINGS UNLESS YOU KNOW WHAT YOU ARE DOING
+# Static assets prefix
 #---------------------------
-
 static_prefix:
   internal_js: /js
   internal_css: /css
