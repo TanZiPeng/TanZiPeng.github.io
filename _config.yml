@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Tzp
-subtitle: ''
-description: ''
-keywords:
-author: Tan Zi Peng
+title: TanZp
+subtitle: 'TanZiPeng'
+description: '谭仔鹏的个人博客'
+keywords: 谭仔鹏的个人博客
+author: Tan ZiPeng
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://tanzipeng.github.io
 root: /
 permalink: /p/:abbrlink/
 permalink_defaults:
