@@ -85,33 +85,33 @@ dark_mode:
 
 # Theme color configuration for a cohesive design
 color:
-  # 调整了亮色模式下的字体颜色，提高对比度
   body_bg_color: "#f0f2f5"
   body_bg_color_dark: "#1e1e1e"
 
   navbar_bg_color: "#ffffff"
   navbar_bg_color_dark: "#2c2c2c"
 
-  navbar_text_color: "#2d3748" # 增强对比度
+  navbar_text_color: "#2d3748"
   navbar_text_color_dark: "#e2e8f0"
 
-  subtitle_color: "#2d3748" # 增强对比度
-  subtitle_color_dark: "#cbd5e0"
+  # === 重点调整这里，提高深色模式下标题和元信息的对比度 ===
+  subtitle_color: "#2d3748"
+  subtitle_color_dark: "#f8f8f8" # 从 #cbd5e0 调整为更亮的 #f8f8f8
 
-  text_color: "#2d3748" # 增强对比度
-  text_color_dark: "#c4c6c9"
+  text_color: "#2d3748"
+  text_color_dark: "#e0e0e0" # 统一提高暗色模式下的主要文本亮度
 
-  sec_text_color: "#4a5568" # 增强对比度
-  sec_text_color_dark: "#a0aec0"
+  sec_text_color: "#4a5568"
+  sec_text_color_dark: "#cccccc" # 统一提高暗色模式下的次要文本亮度
 
   board_color: "#ffffff"
   board_color_dark: "#2c2c2c"
 
-  post_text_color: "#1a202c" # 增强对比度
-  post_text_color_dark: "#c4c6c9"
+  post_text_color: "#1a202c"
+  post_text_color_dark: "#e0e0e0" # 统一提高暗色模式下的文章正文亮度
 
-  post_heading_color: "#1a202c" # 增强对比度
-  post_heading_color_dark: "#e2e8f0"
+  post_heading_color: "#1a202c"
+  post_heading_color_dark: "#f8f8f8" # 从 #e2e8f0 调整为更亮的 #f8f8f8
 
   post_link_color: "#3182ce"
   post_link_color_dark: "#63b3ed"
