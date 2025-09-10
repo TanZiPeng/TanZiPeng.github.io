@@ -293,7 +293,7 @@ footer:
 #---------------------------
 index:
   # 首页 Banner 头图，您需要准备一张名为 `home-banner.png` 的图片并放在 `source/img/` 目录下
-  banner_img: /img/home-banner.png
+  banner_img: /img/default.png
   banner_img_height: 100
   banner_mask_alpha: 0.4
   # 首页副标题的独立设置
@@ -329,11 +329,11 @@ index:
 #---------------------------
 post:
   # 文章页头图，您需要准备一张名为 `post-banner.png` 的图片并放在 `source/img/` 目录下
-  banner_img: /img/default-cover.png
+  banner_img: /img/default.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
   # 文章在首页的默认封面图
-  default_index_img: /img/default-cover.png
+  default_index_img: /img/default.png
   # 文章标题下方的元信息
   meta:
     author:
