@@ -85,31 +85,32 @@ dark_mode:
 
 # Theme color configuration for a cohesive design
 color:
+  # 调整了亮色模式下的字体颜色，提高对比度
   body_bg_color: "#f0f2f5"
   body_bg_color_dark: "#1e1e1e"
 
   navbar_bg_color: "#ffffff"
   navbar_bg_color_dark: "#2c2c2c"
 
-  navbar_text_color: "#4a5568"
+  navbar_text_color: "#2d3748" # 增强对比度
   navbar_text_color_dark: "#e2e8f0"
 
-  subtitle_color: "#2d3748"
+  subtitle_color: "#2d3748" # 增强对比度
   subtitle_color_dark: "#cbd5e0"
 
-  text_color: "#2d3748"
+  text_color: "#2d3748" # 增强对比度
   text_color_dark: "#c4c6c9"
 
-  sec_text_color: "#718096"
+  sec_text_color: "#4a5568" # 增强对比度
   sec_text_color_dark: "#a0aec0"
 
   board_color: "#ffffff"
   board_color_dark: "#2c2c2c"
 
-  post_text_color: "#2c3e50"
+  post_text_color: "#1a202c" # 增强对比度
   post_text_color_dark: "#c4c6c9"
 
-  post_heading_color: "#1a202c"
+  post_heading_color: "#1a202c" # 增强对比度
   post_heading_color_dark: "#e2e8f0"
 
   post_link_color: "#3182ce"
