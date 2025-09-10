@@ -94,24 +94,23 @@ color:
   navbar_text_color: "#2d3748"
   navbar_text_color_dark: "#e2e8f0"
 
-  # === 重点调整这里，提高深色模式下标题和元信息的对比度 ===
   subtitle_color: "#2d3748"
-  subtitle_color_dark: "#f8f8f8" # 从 #cbd5e0 调整为更亮的 #f8f8f8
+  subtitle_color_dark: "#f8f8f8"
 
   text_color: "#2d3748"
-  text_color_dark: "#e0e0e0" # 统一提高暗色模式下的主要文本亮度
+  text_color_dark: "#e0e0e0"
 
   sec_text_color: "#4a5568"
-  sec_text_color_dark: "#cccccc" # 统一提高暗色模式下的次要文本亮度
+  sec_text_color_dark: "#cccccc"
 
   board_color: "#ffffff"
   board_color_dark: "#2c2c2c"
 
   post_text_color: "#1a202c"
-  post_text_color_dark: "#e0e0e0" # 统一提高暗色模式下的文章正文亮度
+  post_text_color_dark: "#e0e0e0"
 
   post_heading_color: "#1a202c"
-  post_heading_color_dark: "#f8f8f8" # 从 #e2e8f0 调整为更亮的 #f8f8f8
+  post_heading_color_dark: "#f8f8f8"
 
   post_link_color: "#3182ce"
   post_link_color_dark: "#63b3ed"
@@ -198,7 +197,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # Search feature
 search:
@@ -507,9 +506,9 @@ about:
   intro: "An elegant theme for Hexo"
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png", tip: "微信" }
     - { class: "iconfont icon-twitter", link: "https://twitter.com", tip: "Twitter" }
-
+    - { class: "iconfont icon-mail-fill", link: "mailto:tan133261080@gmail.com", tip: "邮箱" }
 
 #---------------------------
 # Custom Page
