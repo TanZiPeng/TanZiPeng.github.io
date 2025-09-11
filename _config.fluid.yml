@@ -534,7 +534,7 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img:/img/example.jpg
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -609,7 +609,7 @@ post:
     # 置于板块的左侧或右侧
     # place in the board
     # Options: left | right
-    placement: left
+    placement: right
 
     # 文章的排序字段，前面带减号是倒序，不带减号是正序
     # Sort field for posts, with a minus sign is reverse order
@@ -628,7 +628,7 @@ post:
     # 置于板块的左侧或右侧
     # place in the board
     # Options: left | right
-    placement: right
+    placement: left
 
     # 目录会选择这些节点作为标题
     # TOC will select these nodes as headings
@@ -645,7 +645,7 @@ post:
 
     # CreativeCommons license
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
-    license: 'BY'
+    license: 'BY-NC-ND'
 
     # 显示作者
     author:
@@ -724,7 +724,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: giscus
 
 
 #---------------------------
@@ -865,18 +865,17 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo:
-  repo-id:
-  category:
-  category-id:
-  theme-light: light
-  theme-dark: dark
-  mapping: pathname
-  reactions-enabled: 1
-  emit-metadata: 0
-  input-position: top
-  lang: zh-CN
-
+  repo: 'TanZiPeng/TanZiPeng.github.io' # 从 data-repo 复制
+  repo-id: 'R_kgDOPsdp7A' # 从 data-repo-id 复制
+  category: 'General' # 从 data-category 复制
+  category-id: 'DIC_kwDOPsdp7M4CvRc3' # 从 data-category-id 复制
+  theme-light: 'light' # 可根据喜好修改
+  theme-dark: 'dark' # 可根据喜好修改
+  mapping: 'pathname' # 从 data-mapping 复制
+  reactions-enabled: 1 # 从 data-reactions-enabled 复制
+  emit-metadata: 0 # 从 data-emit-metadata 复制
+  input-position: 'bottom' # 从 data-input-position 复制
+  lang: 'zh-CN' # 从 data-lang 复制
 # Discuss
 # 多平台、多数据库、自托管、免费开源评论系统
 # Self-hosted, small size, multi-platform, multi-database, free and open source commenting system
