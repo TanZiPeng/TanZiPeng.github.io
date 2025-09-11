@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: about 
 title: About 😊 TanZp
 date: 1757492997489
 updated: 1757553188870
